@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "37effe05-55b8-4938-8f11-eb9439a09858",
+		"name": "5 days weather with 3 hour step",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42429562",
+		"_collection_link": "https://savin-workspace.postman.co/workspace/Savin-workspace-Workspace~019a8729-669a-434b-a033-f689e27198d0/collection/42429562-37effe05-55b8-4938-8f11-eb9439a09858?action=share&source=collection_link&creator=42429562"
+	},
+	"item": [
+		{
+			"name": "Weather by city name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/forecast?q=Iași, IS, RO&appid=656d31a198f120454b3792a1da297c5d&mode=json&cnt=5&units=metric&lang=RO",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Iași, IS, RO"
+						},
+						{
+							"key": "appid",
+							"value": "656d31a198f120454b3792a1da297c5d"
+						},
+						{
+							"key": "mode",
+							"value": "json"
+						},
+						{
+							"key": "cnt",
+							"value": "5"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "lang",
+							"value": "RO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Weather by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/forecast?id=675810&appid=656d31a198f120454b3792a1da297c5d&mode=standard&cnt=8&units=standard&lang=RO",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "675810"
+						},
+						{
+							"key": "appid",
+							"value": "656d31a198f120454b3792a1da297c5d"
+						},
+						{
+							"key": "mode",
+							"value": "standard"
+						},
+						{
+							"key": "cnt",
+							"value": "8"
+						},
+						{
+							"key": "units",
+							"value": "standard"
+						},
+						{
+							"key": "lang",
+							"value": "RO"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Weather by ZIP code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/forecast?zip=707410,RO&appid=656d31a198f120454b3792a1da297c5d&mode=json&cnt=38&units=imperial&lang=RO",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "zip",
+							"value": "707410,RO"
+						},
+						{
+							"key": "appid",
+							"value": "656d31a198f120454b3792a1da297c5d"
+						},
+						{
+							"key": "mode",
+							"value": "json"
+						},
+						{
+							"key": "cnt",
+							"value": "38"
+						},
+						{
+							"key": "units",
+							"value": "imperial"
+						},
+						{
+							"key": "lang",
+							"value": "RO"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

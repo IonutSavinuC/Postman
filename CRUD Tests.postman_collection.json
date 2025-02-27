@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "af1dc96c-0abd-4acc-b14e-5903240f572b",
+		"name": "CRUD Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42429562",
+		"_collection_link": "https://savin-workspace.postman.co/workspace/Savin-workspace-Workspace~019a8729-669a-434b-a033-f689e27198d0/collection/42429562-af1dc96c-0abd-4acc-b14e-5903240f572b?action=share&source=collection_link&creator=42429562"
+	},
+	"item": [
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://qachallenge.ro/api/test_api.php?action=fetch_all",
+					"protocol": "http",
+					"host": [
+						"qachallenge",
+						"ro"
+					],
+					"path": [
+						"api",
+						"test_api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "fetch_all"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Ionut",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Savin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://qachallenge.ro/api/test_api.php?action=insert",
+					"protocol": "http",
+					"host": [
+						"qachallenge",
+						"ro"
+					],
+					"path": [
+						"api",
+						"test_api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "insert"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "3151",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "Ion",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Ion",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://qachallenge.ro/api/test_api.php?action=update",
+					"protocol": "http",
+					"host": [
+						"qachallenge",
+						"ro"
+					],
+					"path": [
+						"api",
+						"test_api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "update"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://qachallenge.ro/api/test_api.php?action=delete&id=3151",
+					"protocol": "http",
+					"host": [
+						"qachallenge",
+						"ro"
+					],
+					"path": [
+						"api",
+						"test_api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "delete"
+						},
+						{
+							"key": "id",
+							"value": "3151"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read single id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://qachallenge.ro/api/test_api.php?action=fetch_single&id=3152",
+					"protocol": "http",
+					"host": [
+						"qachallenge",
+						"ro"
+					],
+					"path": [
+						"api",
+						"test_api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "fetch_single"
+						},
+						{
+							"key": "id",
+							"value": "3152"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

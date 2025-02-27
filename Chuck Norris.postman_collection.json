@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "f89d6463-b916-4538-9b20-1f3a1036b9cf",
+		"name": "Chuck Norris",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42429562",
+		"_collection_link": "https://savin-workspace.postman.co/workspace/Savin-workspace-Workspace~019a8729-669a-434b-a033-f689e27198d0/collection/42429562-f89d6463-b916-4538-9b20-1f3a1036b9cf?action=share&source=collection_link&creator=42429562"
+	},
+	"item": [
+		{
+			"name": "Chuck Norris jokes by category ",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.chucknorris.io/jokes/random?category=science",
+					"protocol": "https",
+					"host": [
+						"api",
+						"chucknorris",
+						"io"
+					],
+					"path": [
+						"jokes",
+						"random"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "science"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chuck Norris jokes by search query ",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.chucknorris.io/jokes/search?query=Johnny",
+					"protocol": "https",
+					"host": [
+						"api",
+						"chucknorris",
+						"io"
+					],
+					"path": [
+						"jokes",
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "Johnny"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

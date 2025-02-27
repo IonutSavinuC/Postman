@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "2c5ec110-e99c-433a-a026-89577df8f69d",
+		"name": "OMDb API - Practice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42429562",
+		"_collection_link": "https://savin-workspace.postman.co/workspace/Savin-workspace-Workspace~019a8729-669a-434b-a033-f689e27198d0/collection/42429562-2c5ec110-e99c-433a-a026-89577df8f69d?action=share&source=collection_link&creator=42429562"
+	},
+	"item": [
+		{
+			"name": "Movies by title & year",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.omdbapi.com/?apikey=b75a17b9&t=Dune&y=2024",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "b75a17b9"
+						},
+						{
+							"key": "t",
+							"value": "Dune"
+						},
+						{
+							"key": "y",
+							"value": "2024"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movie by id & plot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.omdbapi.com/?apikey=b75a17b9&i=tt0108778&plot=full",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "b75a17b9"
+						},
+						{
+							"key": "i",
+							"value": "tt0108778"
+						},
+						{
+							"key": "plot",
+							"value": "full"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movie by search & type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.omdbapi.com/?apikey=b75a17b9&s=Harry Potter&type=movie",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "b75a17b9"
+						},
+						{
+							"key": "s",
+							"value": "Harry Potter"
+						},
+						{
+							"key": "type",
+							"value": "movie"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "0feb77bc-8fd5-4cbe-b22f-7d0c42d358ae",
+		"name": "Weather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42429562",
+		"_collection_link": "https://savin-workspace.postman.co/workspace/Savin-workspace-Workspace~019a8729-669a-434b-a033-f689e27198d0/collection/42429562-0feb77bc-8fd5-4cbe-b22f-7d0c42d358ae?action=share&source=collection_link&creator=42429562"
+	},
+	"item": [
+		{
+			"name": "Get weather by city name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q=Iasi&appid=656d31a198f120454b3792a1da297c5d&mode=json&units=metric&lang=RO",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Iasi"
+						},
+						{
+							"key": "appid",
+							"value": "656d31a198f120454b3792a1da297c5d"
+						},
+						{
+							"key": "mode",
+							"value": "json"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "lang",
+							"value": "RO"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
